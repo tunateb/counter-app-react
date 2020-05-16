@@ -13,12 +13,14 @@ class Counter extends React.Component {
     return (
       <div className="counter-wrapper">
         <div className="count-text">{this.state.count}</div>
-        <button className="btn btn-primary" onClick={this.handleIncrease}>
-          +
-        </button>
-        <button className="btn btn-primary" onClick={this.handleDecrease}>
-          -
-        </button>
+        <div className="btn-wrapper">
+          <button className="btn btn-lg btn-primary" onClick={this.handleDecrease}>
+            -
+          </button>
+          <button className="btn btn-lg btn-primary" onClick={this.handleIncrease}>
+            +
+          </button>
+        </div>
       </div>
     );
   }

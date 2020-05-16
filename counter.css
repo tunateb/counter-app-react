@@ -4,27 +4,57 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .card {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    width: 400px;
-    height: 500px;
-    box-shadow: 0px 0px 3px 1px #333;
+    width: 440px;
+    height: 530px;
+    background-color: rgb(112, 75, 136 );
+    color: #fff;  
+    box-shadow: 0px 0px 10px 1px #333;
 }
 
 .title-wrapper {
-    max-width: 200px;
     margin: 10px auto;
 }
 
 .counter-title {
-    width: 200px;
-    height: 200px;
-}
-
-.counter-wrapper {
-
+    width: 250px;
+    height: 250px;
 }
 
 .count-text {
-    font-size: 5rem;
+    font-size: 8rem;
 }
+
+.btn-wrapper {
+    margin: auto 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.btn {
+    background-color: rgb(95, 50, 219);
+    border: none;
+    box-shadow: 3px 2px 3px 0px #333;
+    font-size: 2rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.btn:hover {
+    background-color: rgb(48, 25, 110);
+}
+
+.btn:active {
+    background-color: rgb(48, 25, 110);
+    transform: translateY(4px);
+}
+
